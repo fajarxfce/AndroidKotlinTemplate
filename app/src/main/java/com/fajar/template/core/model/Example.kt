@@ -7,7 +7,6 @@ import kotlinx.parcelize.Parcelize
 data class Example (
     val id: Int?,
     val name: String?,
-    val description: String?,
-    val image: String?,
+    val description: String?
 
 ): Parcelable

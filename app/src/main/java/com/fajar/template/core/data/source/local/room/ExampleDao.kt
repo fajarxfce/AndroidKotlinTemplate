@@ -15,7 +15,7 @@ interface ExampleDao {
     suspend fun insertExample(example: ExampleEntity)
 
     @Query("SELECT * FROM example")
-    fun getExampleList(): Flow<List<ExampleEntity>>
+    fun getExampleList(): Flow<ExampleEntity>
 
     @Query("SELECT * FROM example WHERE id = :id")
     fun getExampleById(id: Int): Flow<ExampleEntity>
